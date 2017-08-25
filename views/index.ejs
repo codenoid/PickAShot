@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Jihantoro Shot - Save Your Page as Image or PDF</title>
+  <meta property="og:title" content="Jihantoro Shot - Save Your Page as Image or PDF" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://shot.jihantoro.net" />
+  <meta property="og:image" content="http://shot.jihantoro.net/batman.jpg" />
+  <meta property="og:description" content="Shot your webpage with Jihantoro Shot, a Flexible Screenshot App Based on Javascript"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <style type="text/css">
+    form {text-align:center;}
+    .center {text-align:center;}
+    img {width:220px;height:auto;border-radius:50%;}
+    button {cursor:pointer;} 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="center">
+      <br>
+      <img src="/batman.jpg">
+    </div>
+    <br>
+    <form action="" method="get">
+      <input name="shot" placeholder="Page URL, example http://jihantoro.net" type="text">
+      <br><br>
+      <input type="hidden" name="do" id="do">
+      <button class="btn btn-primary" id="img">TAKE SCREENSHOT</button>
+      <button class="btn btn-info" id="pdf">SAVE PDF</button>
+    </form>
+    <br>
+  </div>
+  <script>
+  $('button#img').click(function(){
+    $('input#do').val('img');
+    submit();
+  })
+  $('button#pdf').click(function(){
+    $('input#do').val('pdf');
+    submit();
+  })
+  function submit(){
+    var url = $('input[name="shot"]').val()
+    ,   do  = $('input#do').val();
+   if(url && do) {$('form').submit()}
+  }
+  </script>
+</body>
+</html>

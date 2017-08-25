@@ -1,0 +1,22 @@
+{
+  "name": "Jihantoro Shot",
+  "version": "1.0.0",
+  "description": "Jihantoro Shot WebPage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "puppeteer"
+  ],
+  "author": "Rubi Jihantoro",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "md5": "^2.2.1",
+    "mongodb": "^2.2.31",
+    "promise": "^8.0.1",
+    "puppeteer": "^0.10.0"
+  }
+}
