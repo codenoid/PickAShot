@@ -21,16 +21,6 @@ app.get('/', function(req, res){
      ,   m = date.getMonth()
      ,   y = date.getFullYear();
      var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-     MongoClient.connect(url, function(err, db) {
-       var col = db.collection('users');
-       col.find({user_ip:ip}).limit(3).toArray(function(err, docs) {
-         let l = docs.length;
-	 db.close();
-	 return l; // this is async rubi, you cant just return the value like that
-       });
-     });
-     console.log(count_usage);
-     
      var filename = md5(y+m+d+h+m+ip);
      (async () => {
 	const browser = await puppeteer.launch();
