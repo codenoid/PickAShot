@@ -14,3 +14,10 @@ Tested on
 - MacOS Sierra v10.12.5
 - Node JS v8.4.0 (installed via nvm)
 - MongoDB v3.4.7
+
+## Development
+/ Todo
+- [x] Take Screenshot
+- [ ] Take PDF
+- [ ] Limit USAGE
+- [ ] Send Screenshot / PDF to User Email
