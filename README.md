@@ -1,6 +1,8 @@
 # PickAShot
 Save your web page as Image or Pdf
 
+![Ciko's BatMan](https://raw.githubusercontent.com/codenoid/pickashot/master/public/batman.jpg)
+
 ## Requirements
 - Express JS
 - MD5
